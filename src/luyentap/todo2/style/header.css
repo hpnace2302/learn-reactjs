@@ -1,0 +1,9 @@
+.header__todo {
+    width: 300px;
+    height:40px;
+    background-color: pink;
+    margin: 0 auto;
+}
+.header__todo--title {
+    text-align: center;
+}

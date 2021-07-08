@@ -1,0 +1,10 @@
+
+
+.header {
+    min-height: 45%;
+    width: 100%;
+    background-color: pink;   
+}
+.header__title {
+    text-align: center;
+}
