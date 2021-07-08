@@ -35,10 +35,10 @@ const HeaderMovies = () => {
         </Menu.Item>
         }
         {emailUser !== null &&
-          <Menu.Item>Hi : {emailUser}</Menu.Item>
+          <Menu.Item key="user">Hi : {emailUser}</Menu.Item>
         }
         {emailUser !== null && 
-        <Menu.Item onClick={() => logoutMovies()}>
+        <Menu.Item key="logout" onClick={() => logoutMovies()}>
           Logout
         </Menu.Item>
         }

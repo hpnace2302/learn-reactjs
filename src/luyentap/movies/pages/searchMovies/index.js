@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from 'react'
+import React,{useState} from 'react'
 import LayoutMovies from '../../components/layout'
 import BreadcrumbMovies from '../../components/Breadcrumb'
 import InputSeachMovies from './components/search'
@@ -10,11 +10,11 @@ import { helper} from '../../helper/common'
 const SearchMovies = () => {
   const [loading, setLoading] = useState(false)
   const [dataSearch,setDataSearch] = useState({})
-  const [page, setPage] = useState(1)
+  // const [page, setPage] = useState(1)
 
   const searchFilm = async (keyword) => {
     setLoading(true)
-    const data = await api.searchMoviesByKeyWord(keyword, page)
+    const data = await api.searchMoviesByKeyWord(keyword, 1)
     if (!helper.isEmptyObject(data)) {
       if (data.hasOwnProperty('results')) {
         setDataSearch(data.results)
